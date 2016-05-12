@@ -43,7 +43,7 @@ start() {
         pull_latest_proxy_image
     fi
 
-    echo 'Staring container...'
+    echo 'Starting container...'
     if [ "$(container_status)" == "not found" ]; then
         docker run -d --restart=always -v /var/run/docker.sock:/tmp/docker.sock:ro -p 80:80 -p 443:443 -p 19322:19322/udp -e CONTAINER_NAME=http-proxy --name http-proxy codekitchen/dinghy-http-proxy 1> /dev/null
     else
