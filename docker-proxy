@@ -117,7 +117,7 @@ resolver_file_up_to_date() {
 }
 
 create_or_update_resolver_file() {
-    mkdir -p /etc/resolver
+    sudo mkdir -p /etc/resolver
 
     generate_resolver_file | sudo tee /etc/resolver/docker 1> /dev/null
     sudo killall -HUP mDNSResponder
