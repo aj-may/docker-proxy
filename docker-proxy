@@ -68,7 +68,7 @@ stop() {
     fi
 
     echo 'Stopping the proxy container...'
-    docker stop http-proxy 1> /dev/null
+    docker rm -f http-proxy 1> /dev/null
 }
 
 restart() {
