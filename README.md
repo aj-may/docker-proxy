@@ -1,12 +1,20 @@
-# Installation
+# docker-proxy
 
-Run the command below from the directory where you want to install the script.
+A utility that helps manage a Docker container running codekitchen's http-proxy. For more information about the proxy, see https://github.com/codekitchen/dinghy-http-proxy
+
+---
+
+## Installation
+
+To install the proxy, run the following command:
 
 ```
-curl -sL https://raw.githubusercontent.com/aj-may/docker-proxy/master/install.sh | bash
+curl -sL https://raw.githubusercontent.com/marksost/docker-proxy/master/install.sh | bash
 ```
 
-# Usage
+NOTE: If you first `cd` into a directory within your path, you will be able to run this utility from any command line afterwards. Normally it's best to put this in `/usr/local/bin`.
+
+## Usage
 
 ```
 docker-proxy status      Prints the status of the docker proxy.
