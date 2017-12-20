@@ -139,7 +139,7 @@ die() {
 # Function that starts the service's container for the first time
 docker_command() {
 
-    docker run -d --restart=always -v /var/run/docker.sock:/tmp/docker.sock:ro -p 80:80 -p 443:443 -p 19322:19322/udp -e CONTAINER_NAME=http-proxy --name http-proxy codekitchen/dinghy-http-proxy 1> /dev/null
+    docker run -d --restart=always -v /var/run/docker.sock:/tmp/docker.sock:ro -v ~/.dinghy/certs:/etc/nginx/certs -p 80:80 -p 443:443 -p 19322:19322/udp -e CONTAINER_NAME=http-proxy --name http-proxy codekitchen/dinghy-http-proxy 1> /dev/null
 
 }
 
