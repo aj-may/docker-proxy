@@ -2,7 +2,9 @@
 
 A utility that helps manage a Docker container running codekitchen's http-proxy. For more information about the proxy, see https://github.com/codekitchen/dinghy-http-proxy
 
----
+## New Version
+
+I've completely re-written this tool and have given it a new name!  Check it out here https://github.com/aj-may/dotdocker 👈
 
 ## Installation
 
