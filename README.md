@@ -1,6 +1,6 @@
 # docker-proxy
 
-A utility that helps manage a Docker container running codekitchen's http-proxy. For more information about the proxy, see https://github.com/codekitchen/dinghy-http-proxy
+A utility that helps manage a Docker container running codekitchen's http-proxy on MacOS using Docker for Mac. For Linux support see my new project below. For more information about the proxy, see https://github.com/codekitchen/dinghy-http-proxy
 
 ## New Version
 
